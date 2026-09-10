@@ -138,6 +138,16 @@ section {
     padding-top: 90px;
 }
 
+.profile-image {
+    width: 220px;
+    height: 280px;
+    margin-bottom: 30px;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 12px 28px rgb(24 59 86 / 18%);
+}
+
 .eyebrow {
     margin: 0 0 14px;
     color: var(--accent-dark);
@@ -224,5 +234,10 @@ p {
 
     section {
         padding: 90px 0;
+    }
+
+    .profile-image {
+        width: 170px;
+        height: 220px;
     }
 }
