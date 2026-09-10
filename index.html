@@ -10,25 +10,34 @@
 </head>
 
 <body>
-    <nav class="sidebar" aria-label="Main navigation">
+    <button class="menu-toggle" id="menuToggle" type="button" aria-controls="sidebar" aria-expanded="false"
+        aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="menu-overlay" id="menuOverlay" hidden></div>
+
+    <nav class="sidebar" id="sidebar" aria-label="Main navigation" aria-hidden="true">
         <p class="brand">AS<span>.</span></p>
         <ul class="menu">
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Tech Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact Me</a></li>
+            <li><button class="menu-option" type="button" data-section="about">About Me</button></li>
+            <li><button class="menu-option" type="button" data-section="skills">Tech Skills</button></li>
+            <li><button class="menu-option" type="button" data-section="projects">Projects</button></li>
+            <li><button class="menu-option" type="button" data-section="contact">Contact Me</button></li>
         </ul>
     </nav>
 
     <main class="content">
-        <section class="intro" id="about">
+        <section class="intro information" id="about">
             <p class="eyebrow">Welcome to my portfolio</p>
             <h1 id="Welcome"></h1>
             <p id="KnowMe">I'm AbdulRahman Stephen, a curious developer who enjoys learning, building projects, and
                 growing my skills.</p>
         </section>
 
-        <section class="section" id="skills">
+        <section class="section information" id="skills">
             <p class="eyebrow">What I work with</p>
             <h2>Tech Skills</h2>
             <div class="skill-list">
@@ -39,14 +48,14 @@
             </div>
         </section>
 
-        <section class="section" id="projects">
+        <section class="section information" id="projects">
             <p class="eyebrow">Selected work</p>
             <h2>Projects</h2>
             <p>Explore the projects I have built while practicing new ideas and turning them into useful experiences.
             </p>
         </section>
 
-        <section class="section" id="contact">
+        <section class="section information" id="contact">
             <p class="eyebrow">Let's connect</p>
             <h2>Contact Me</h2>
             <p>Have a project or idea in mind? I would love to hear from you.</p>
